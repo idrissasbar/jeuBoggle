@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkWindow" id="startWindow">
+    <property name="width_request">800</property>
+    <property name="height_request">600</property>
+    <property name="can_focus">False</property>
+    <property name="events"/>
+    <property name="title" translatable="yes" context="boggle game">Jeu de Boggle</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">desktop</property>
+    <property name="has_resize_grip">False</property>
+    <style>
+      <class name="startWindow"/>
+    </style>
+    <child>
+      <object class="GtkFixed" id="fixedmenu">
+        <property name="width_request">800</property>
+        <property name="height_request">600</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkEntry" id="entry1">
+            <property name="width_request">238</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+          </object>
+          <packing>
+            <property name="x">505</property>
+            <property name="y">271</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="width_request">800</property>
+            <property name="height_request">600</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">bg.png</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
